@@ -334,7 +334,19 @@
 }
 
 @media screen and (max-width: 63.938em) {
+    .home__header-block {
+        margin-bottom: 20px;
+    }
     
+    .home__header-i4-media {
+        height: 50px;
+        width: 50px;
+    }
+    .home__header-i4-title {
+        font-size: 2rem;
+        line-height: 3rem;
+    } 
+
 }
 
 @media screen and (min-width: 46.250em) and (max-width: 63.938em){
