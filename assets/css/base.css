@@ -139,6 +139,86 @@ h1,h2,h3,h4,h5,h6,p {
     border-right: 6px solid transparent;
 }
 
+/* select  */
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 150px;
+    height: 100%;
+}
+  
+.custom-select select {
+    display: none;  
+}
+
+.select-selected {
+    background-color: #fff;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 4rem;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #EDEDED;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    top: calc(50% - 5px);
+    border-bottom: 10px solid #EDEDED;
+    border-top: 10px solid transparent;
+}
+
+.select-items div,
+.select-selected {
+    color: var(--text);
+    padding-right: 12px;
+    cursor: pointer;
+    height: 100%;
+    font-weight: 600;
+}
+
+.select-items div {
+    font-weight: 300;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: -6px 9px 11px rgb(0, 0, 0 , 0.5);
+    width: max-content;
+    min-width: 150px;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, 
+.same-as-selected {
+    background-color: #F0F0F0;
+}
+/* select  */
+
+
 @keyframes fadeIn {
     from {
         opacity: 0;
