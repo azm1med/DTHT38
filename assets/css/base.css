@@ -77,7 +77,6 @@ h1,h2,h3,h4,h5,h6,p {
     padding: 5px 10px;
     background-size: 200%;
     color: #fff;
-    transition: all 0.5s;
     cursor: pointer;
 }
 
@@ -158,6 +157,7 @@ h1,h2,h3,h4,h5,h6,p {
     overflow: hidden;
     line-height: 4rem;
     width: 100%;
+    padding-right: 20px;
 }
 
 .select-selected:after {
@@ -384,12 +384,12 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .root__header-hot {
-    text-align: center;
     color: #fff;
 }
 
 .root__header-hot-title {
     font-size: 2rem;
+    margin-bottom: 10px;
 }   
 
 .root__header-hot-desc {
@@ -971,6 +971,10 @@ h1,h2,h3,h4,h5,h6,p {
     margin-top: 10px;
 }
 
+#root__note:checked~.root__sildebar-note-block {
+    display: none;
+}
+
 .root__sildebar-note {
     background-image: var(--gradient__yel);
     padding: 10px;
@@ -1061,7 +1065,10 @@ h1,h2,h3,h4,h5,h6,p {
     .root__header {
         padding: 0 10px;
     }
-
+    
+    .root__header-hot {
+        text-align: center;
+    }
     .root__header-search {
         display: none;
     }

@@ -292,6 +292,7 @@
 }
 
 .home__other-item-desc {
+    color: #B1B1B1;
     font-size: 1.2rem;
     -webkit-line-clamp: 2;
 }
