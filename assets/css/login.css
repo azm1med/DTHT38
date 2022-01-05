@@ -126,6 +126,10 @@
     cursor: pointer;
 }
 
+.login__form-mind-pc:hover {
+    text-decoration: underline;
+}
+
 .login__form-mind-all {
     display: none;
 }
@@ -160,6 +164,11 @@
     width: 200px;
     height: 45px;
     font-size: 1.8rem;
+}
+
+.login__form-ac-btn.register {
+    background: var(--gradient__yel);
+    color: #000;
 }
 
 .login__form-ac-btn:hover {
@@ -266,6 +275,14 @@
     background-image: var(--gradient__yel);
     color: var(--text);
     line-height: 50px;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center;
+}
+
+.login__slidebar-ac.register {
+    background-image: var(--gradient__blu);
+    color: #fff;
 }
 
 .login__slidebar-ac:hover {
@@ -297,5 +314,12 @@
 }
 
 @media screen and (max-width: 46.188em) {
-    
+    .login__form-ac-btn {
+        width: 150px;
+        font-size: 1.6rem;
+    }
+
+    .login__slidebar-ac {
+        font-size: 1.6rem;
+    }
 }
