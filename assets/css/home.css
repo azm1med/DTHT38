@@ -190,7 +190,7 @@
     height: 40px;
 }
 
-.home__relics-item-ac-btn:hover {
+.home__relics-link:hover .home__relics-item-ac-btn {
     background: var(--gradient__yel);
 }
 
@@ -224,6 +224,7 @@
 }
 
 .home__other-header {
+    padding-left: 10px;
     display: flex;
     align-items: center;
 }
@@ -260,16 +261,11 @@
     border-radius: 6px;
 }
 
-.home__other-item:hover {
-    background: #EDEDED;
-}
-
 .home__other-item-box {
     display: flex;
 }
 
 .home__other-item-media {
-    height: 55px;
     width: 55px;
     margin-right: 10px;
     border-radius: 6px;
@@ -294,6 +290,7 @@
 .home__other-item-desc {
     color: #B1B1B1;
     font-size: 1.2rem;
+    line-height: 1.4rem;
     -webkit-line-clamp: 2;
 }
 
@@ -304,6 +301,7 @@
 
 .home__other-ac-btn {
     color: var(--text);
+    margin-top: 5px;
 }
 
 .home__other-ac-btn:hover {
