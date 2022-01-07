@@ -177,97 +177,97 @@
 
 
 /* slidebar  */
-.login__slidebar {
+.root__help {
     background: #fff;
     padding-top: 30px;
     border-radius: 6px;
 }
 
-.login__slidebar-header {
+.root__help-header {
     display: flex;
     align-items: center;
     padding-left: 20px;
 }
 
-.login__slidebar-header-media {
+.root__help-header-media {
     height: 42px;
     width: 42px;
 }
 
-.login__slidebar-header-media img {
+.root__help-header-media img {
     height: 100%;
     width: 100%;
 }
 
-.login__slidebar-content {
+.root__help-content {
     margin-left: 10px;
     flex: 1;
 }
 
-.login__slidebar-header-title {
+.root__help-header-title {
     color: var(--text);
     font-size: 2.5rem;
     margin-bottom: 5px;
 }
 
-.login__slidebar-header-desc {
+.root__help-header-desc {
     color: #B1B1B1;
 }
 
-.login__slidebar-list {
+.root__help-list {
     padding: 10px;
 }
 
-.login__slidebar-item {
+.root__help-item {
     padding: 10px;
     border-radius: 6px;
     display: flex;
 }
 
-.login__slidebar-item-media {
+.root__help-item-media {
     width: 55px;
 }
 
-.login__slidebar-item-media img {
+.root__help-item-media img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
 }
 
-.login__slidebar-item-content {
+.root__help-item-content {
     flex: 1;
     margin-left: 10px;
 }
 
-.login__slidebar-item-title {
+.root__help-item-title {
     color: var(--text);
     font-size: 1.4rem;
     -webkit-line-clamp: 1;
 }
 
-.login__slidebar-item-desc {
+.root__help-item-desc {
     color: #B1B1B1;
     font-size: 1.2rem;
     -webkit-line-clamp: 2;
 }
 
-.login__slidebar-all {
+.root__help-all {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 10px;
 }
 
-.login__slidebar-all-link {
+.root__help-all-link {
     padding: 5px 10px;
     color: #B1B1B1;
 }
 
-.login__slidebar-all-link:hover {
+.root__help-all-link:hover {
     text-decoration: underline;
 }
 
-.login__slidebar-ac {
+.root__help-ac {
     height: 50px;
     width: 100%;
     border-bottom-left-radius: 6px;
@@ -280,12 +280,12 @@
     text-align: center;
 }
 
-.login__slidebar-ac.register {
+.root__help-ac.register {
     background-image: var(--gradient__blu);
     color: #fff;
 }
 
-.login__slidebar-ac:hover {
+.root__help-ac:hover {
     opacity: 0.8;
 }
 
@@ -319,7 +319,7 @@
         font-size: 1.6rem;
     }
 
-    .login__slidebar-ac {
+    .root__help-ac {
         font-size: 1.6rem;
     }
 }

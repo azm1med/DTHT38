@@ -8,7 +8,10 @@
     
     --gradient: linear-gradient(180deg, #B40000 0%, #9A0000 100%);
     --gradient__yel: linear-gradient(180deg, #EEFF8A 0%, #F6D317 100%);
-    --gradient__blu: linear-gradient(180deg, #1EDBAF 0%, #21C59F 100%);;
+    --gradient__yel__opa: linear-gradient(180deg, #FFFEE0 0%, #FFFEDA 100%);
+    --gradient__blu: linear-gradient(180deg, #1EDBAF 0%, #21C59F 100%);
+    --gradient__red: linear-gradient(180deg, #B40000 0%, #9A0000 100%);
+    --gradient__whi: linear-gradient(180deg, rgba(244, 244, 244, 0) 0%, #F4F4F4 100%);
     --primary: #9B0000;
     --primary__sub: #B30000;
     --second: #F6D317;
@@ -316,6 +319,10 @@ h1,h2,h3,h4,h5,h6,p {
     width: 100%;
     height: 100%;
     padding: 40px 40px 100px 40px;
+}
+
+.root__content.nop {
+    padding: 0;
 }
 
 .root__content::-webkit-scrollbar-track {
