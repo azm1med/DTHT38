@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../libs/pagination/simplePagination.css">
     <link rel="stylesheet" href="../css/root.css">
 </head>
 <body>
@@ -273,8 +274,8 @@
                <div class="root__content nop">
                    <!-- content page  -->
                    <div class="details-block">
-                       <div class="details row">
-                            <div class="details__content-block col l-9 m-8 c-12">
+                       <div class="details row no-gutters">
+                            <div class="details__content-block col l-9 m-12 c-12">
                                 <div class="details__content">
                                     <div class="details__relics">
                                         <div class="details__relics-header">
@@ -288,35 +289,32 @@
                                         </div>
                                         <div class="details__relics-lib">
                                             <div class="details__relics-lib-view">
-                                                <img src="https://icdn.dantri.com.vn/2017/den-ong-hoang-muoi-1497241358615.jpg" alt="">
+                                                <img class="details__relics-lib-view-img" src="https://icdn.dantri.com.vn/2017/den-ong-hoang-muoi-1497241358615.jpg" alt="">
+                                                <img class="details__relics-lib-view-img" src="https://toigingiuvedep.vn/wp-content/uploads/2021/01/hinh-anh-nen-sasuke-va-naruto.jpg" alt="">
+                                                <img class="details__relics-lib-view-img" src="https://2giay24h.com/wp-content/uploads/2017/07/naruto-vs-sasuke.jpg" alt="">
+                                                <img class="details__relics-lib-view-img" src="https://hinhanhdepvai.com/wp-content/uploads/2017/03/xem-anh-naruto-va-sasuke.jpg" alt="">
                                                 <div class="details__relics-lib-control">
-                                                    <div class="details__relics-lib-control-btn">
+                                                    <div onclick="relics__plus(-1)" class="details__relics-lib-control-btn">
                                                         <i class="fal fa-chevron-left"></i>
                                                     </div>
-                                                    <div class="details__relics-lib-control-btn">
+                                                    <div onclick="relics__plus(1)" class="details__relics-lib-control-btn">
                                                         <i class="fal fa-chevron-right"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="details__relics-lib-footer">
                                                 <div class="details__relics-lib-place">
-                                                    <img src="../libs/img/placeholder.png" alt="">
-                                                    <span>Xã Xuân Hồng, huyện Nghi Xuân, tỉnh Hà Tĩnh</span>
+                                                    <div class="details__relics-lib-place-desc">
+                                                        <img src="../libs/img/placeholder.png" alt="">
+                                                        <span>Xã Xuân Hồng, huyện Nghi Xuân, tỉnh Hà Tĩnh</span>
+                                                    </div>
                                                     <a href="#">Chỉ đường</a>
                                                 </div>
                                                 <div class="details__relics-lib-list">
-                                                    <div class="details__relics-lib-item">
-                                                        <img src="https://icdn.dantri.com.vn/2017/den-ong-hoang-muoi-1497241358615.jpg" alt="">
-                                                    </div>
-                                                    <div class="details__relics-lib-item">
-                                                        <img src="https://i.pinimg.com/originals/6c/75/93/6c7593ae4b97a64153203e17b3a38e34.png" alt="">
-                                                    </div>
-                                                    <div class="details__relics-lib-item">
-                                                        <img src="https://gamek.mediacdn.vn/133514250583805952/2020/12/19/bty1-160836112579597010852.jpg" alt="">
-                                                    </div>
-                                                    <div class="details__relics-lib-item">
-                                                        <img src="https://sieuimba.com/wp-content/uploads/2015/12/6-6.jpg" alt="">
-                                                    </div>
+                                                    <img onclick="relics__current(1)" class="details__relics-lib-item" src="https://icdn.dantri.com.vn/2017/den-ong-hoang-muoi-1497241358615.jpg" alt="">
+                                                    <img onclick="relics__current(2)" class="details__relics-lib-item" src="https://toigingiuvedep.vn/wp-content/uploads/2021/01/hinh-anh-nen-sasuke-va-naruto.jpg" alt="">
+                                                    <img onclick="relics__current(3)" class="details__relics-lib-item" src="https://2giay24h.com/wp-content/uploads/2017/07/naruto-vs-sasuke.jpg" alt="">
+                                                    <img onclick="relics__current(4)" class="details__relics-lib-item" src="https://hinhanhdepvai.com/wp-content/uploads/2017/03/xem-anh-naruto-va-sasuke.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
@@ -344,7 +342,11 @@
                                             </p>
                                             <div class="details__relics-word-ac">
                                                 <hr>
-                                                <label for="details__desc-check" id="details__desc-btn" class="details__relics-word-btn btn">Hiển thị nội dung<i class="fal fa-chevron-down"></i></label>
+                                                <label for="details__desc-check" id="details__desc-btn" class="details__relics-word-btn btn">
+                                                    <span>Hiển thị nội dung</span>
+                                                    <i class="fal fa-chevron-down details__relics-word-btn-down"></i>
+                                                    <i class="fal fa-chevron-up details__relics-word-btn-up"></i>
+                                                </label>
                                             </div>
                                         </div>
                                         <div id="relics__hot" class="details__relics-box">
@@ -449,51 +451,49 @@
                                             <div class="details__relics-box-border">
                                                 <div class="details__relics-box-header">
                                                     <img src="../libs/img/paper-lantern.png" alt="" class="details__relics-box-img">
-                                                    <h2 class="details__relics-box-title">Lễ hội đền chợ củi</h2>
+                                                    <h2 class="details__relics-box-title">Thư viện ảnh</h2>
                                                 </div>
                                                 <div class="details__relics-box-body">
-                                                    <div class="details__relics-media mb row">
-                                                        <div class="details__relics-media-item col l-2-4">
-                                                            <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
-                                                        </div>
-                                                        <div class="details__relics-media-item col l-2-4">
-                                                            <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
-                                                        </div>
-                                                        <div class="details__relics-media-item col l-2-4">
-                                                            <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
-                                                        </div>
-                                                        <div class="details__relics-media-item col l-2-4">
-                                                            <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
-                                                        </div>
-                                                        <div class="details__relics-media-item col l-2-4">
-                                                            <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
-                                                        </div>
-                                                    </div>
                                                     <div class="details__relics-media row">
-                                                        <div class="details__relics-media-item col l-2-4">
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
                                                             <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
                                                         </div>
-                                                        <div class="details__relics-media-item col l-2-4">
-                                                            <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
+                                                            <img src="https://i.pinimg.com/736x/94/89/38/9489388287dbd82da03c203ed3ec4675.jpg" alt="" class="details__relics-media-item-img">
                                                         </div>
-                                                        <div class="details__relics-media-item col l-2-4">
-                                                            <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
+                                                            <img src="https://fandom.vn/wp-content/uploads/2019/04/naruto-uchiha-itachi-1.jpg" alt="" class="details__relics-media-item-img">
                                                         </div>
-                                                        <div class="details__relics-media-item col l-2-4">
-                                                            <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
+                                                            <img src="https://s199.imacdn.com/ta/2018/02/28/93dfbf3de96910c6_14537b5811453342_5984815198095753184552.jpg" alt="" class="details__relics-media-item-img">
                                                         </div>
-                                                        <div class="details__relics-media-item col l-2-4">
-                                                            <img src="https://i.ytimg.com/vi/FMVspELWnKs/maxresdefault.jpg" alt="" class="details__relics-media-item-img">
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
+                                                            <img src="https://product.hstatic.net/1000132959/product/o1cn01xqy7ip1kmodvyq55w___187321206_266ae68154fe436390c690e983e2c3a3.jpg" alt="" class="details__relics-media-item-img">
+                                                        </div>
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
+                                                            <img src="https://i.pinimg.com/originals/25/55/9f/25559f4667c608e97a290e17f6073be0.jpg" alt="" class="details__relics-media-item-img">
+                                                        </div>
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
+                                                            <img src="https://genk.mediacdn.vn/2019/6/5/anh-1-1559721573863507176697.jpg" alt="" class="details__relics-media-item-img">
+                                                        </div>
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
+                                                            <img src="https://cuongtruyen.com/wp-content/uploads/2019/02/itachi-wallpaper-1024x576.jpg" alt="" class="details__relics-media-item-img">
+                                                        </div>
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
+                                                            <img src="https://i.pinimg.com/736x/de/eb/d1/deebd16ded8da1f14531ce4ce581855b.jpg" alt="" class="details__relics-media-item-img">
+                                                        </div>
+                                                        <div class="details__relics-media-item col l-2-4 c-4">
+                                                            <img src="https://rapchieuphim.com/photos/3/tin-tong-hop/phim-chuyen-the-manga.jpg" alt="" class="details__relics-media-item-img">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="details__relics-box-footer">
                                                     <div class="details__relics-box-page">
-                                                        <div class="details__relics-box-page-content">Trang <span>2/4</span> trong tổng <span>34</span> ảnh</div>
-                                                        <div class="details__relics-box-page-ac">
-                                                            <button class="details__relics-box-page-ac-btn"><i class="fal fa-chevron-left"></i></button>
-                                                            <button class="details__relics-box-page-ac-btn"><i class="fal fa-chevron-right"></i></button>
+                                                        <div class="details__relics-box-page-content">Trang 
+                                                            <span id="relics__today"></span>/<span id="relics__page"></span> 
+                                                            trong tổng <span>34</span> ảnh
                                                         </div>
+                                                        <div id="relics__control" class="details__relics-box-page-ac"></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -584,7 +584,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="details__slidebar-block col l-3 m-4 c-12">
+                            <div class="details__slidebar-block col l-3 m-12 c-12">
                                 <div class="root__help">
                                     <div class="root__help-header">
                                         <div class="root__help-header-media">
@@ -630,10 +630,10 @@
                                     <a href="./register.html" class="root__help-ac">Đăng ký tài khoản</a>
                                 </div>
                             </div>
-                       </div>
-                       <div class="details__footer">
-                                Hệ thống quản lý di tích được vận hành bởi sở Văn Hóa - Thể Thao - Du Lịch tỉnh Hà Tĩnh
-                       </div>
+                            <div class="details__footer">
+                                     Hệ thống quản lý di tích được vận hành bởi sở Văn Hóa - Thể Thao - Du Lịch tỉnh Hà Tĩnh
+                            </div>
+                        </div>                  
                    </div>
                    <!-- content page  -->
                </div>
@@ -644,6 +644,11 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../libs/pagination/jquery.simplePagination.js"></script>
 <script src="../js/root.js"></script>
 <script src="../js/details.js"></script>
+<script>
+
+</script>
 </html>
