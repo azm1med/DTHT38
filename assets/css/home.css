@@ -183,6 +183,7 @@
 }
 
 .home__relics-item-ac-btn {
+    display: block;
     background: var(--bgr__sub);
     color: var(--text);
     border-radius: 6px;

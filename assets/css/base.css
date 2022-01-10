@@ -408,11 +408,13 @@ h1,h2,h3,h4,h5,h6,p {
 .root__header-hot-title {
     font-size: 2rem;
     margin-bottom: 10px;
+    /* cursor: pointer; */
 }   
 
 .root__header-hot-desc {
     font-weight: 300;
     font-size: 1.2rem;
+    /* cursor: pointer; */
 }
 
 .root__header-search {
