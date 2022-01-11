@@ -227,13 +227,13 @@
     border-radius: 28px;
 }
 
+.details__relics-word-btn:hover {
+    opacity: 0.8;
+}
+
 .details__relics-word-btn i{
     font-size: 1.6rem;
     margin-left: 5px;
-}
-
-.details__relics-word-btn-up {
-    display: none;
 }
 
 .details__relics-box {
@@ -361,6 +361,7 @@
     border-radius: 6px;
     margin: auto 0;
     width: 100%;
+    border: 1px solid #FFFE00;
 }
 
 .details__relics-box-stt-key {

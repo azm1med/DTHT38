@@ -6,16 +6,16 @@ function details__desc() {
     btn.onclick = function() {
         if (check.checked == 0) {
             desc.style.cssText = '-webkit-line-clamp: unset;';
-            btn.innerHTML = 'Ẩn bớt nội dung';
+            btn.innerHTML = 'Ẩn bớt nội dung <i class="fal fa-chevron-up"></i>';
         } else {
             desc.style.cssText = '-webkit-line-clamp: 4;';
-            btn.innerHTML = 'Hiển thị nội dung';
+            btn.innerHTML = 'Hiển thị nội dung <i class="fal fa-chevron-down"></i>';
         }
     }
 }
 details__desc();
 
-
+// slider 
 var slideIndex = 1;
     relics__show(slideIndex);
 
@@ -43,6 +43,8 @@ function relics__show(n) {
     dots[slideIndex-1].className += " active";
 }
 
+
+// pagination 
 var items = $(".details__relics-media .details__relics-media-item");
 var numItems = items.length;
 var perPage = 5;
