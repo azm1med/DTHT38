@@ -118,6 +118,7 @@
 .home__relics-item {
     height: 230px;
     margin-bottom: 40px;
+    animation: fadeIn ease-in 0.5s;
 }
 
 .home__relics-link {
@@ -327,6 +328,33 @@
     object-fit: cover;
     border-radius: 6px;
 }
+
+/* pagination  */
+.home__pagination-ac {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.home__pagination-ac li span,
+.home__pagination-ac li a {
+    font-size: 1.6rem;
+    padding: 5px 10px;
+    opacity: 0.5;
+}
+
+.home__pagination-ac li span:hover,
+.home__pagination-ac li a:hover {
+    opacity: 1;
+}
+
+.home__pagination-ac li.disabled span,
+.home__pagination-ac li.active span {
+    background: var(--primary);
+    border-color: #ccc;
+    opacity: 1;
+}
+/* pagination  */
 
 
 /* responsive */

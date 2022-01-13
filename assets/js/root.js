@@ -68,3 +68,25 @@ function closeAllSelect(elmnt) {
 document.addEventListener("click", closeAllSelect);
 // select 
 
+// pagination 
+function home__pagination() {
+  var items = $(".home__relics .home__relics-item");
+  var numItems = items.length;
+  var perPage = 5;
+  
+  items.slice(perPage).hide();
+  
+  $('#home__pagination').pagination({
+      items: numItems,
+      itemsOnPage: perPage,
+      prevText: "<i class='fal fa-chevron-left'></i>",
+      nextText: "<i class='fal fa-chevron-right'></i>",
+      onPageClick: function (pageNumber) {
+          var showFrom = perPage * (pageNumber - 1);
+          var showTo = showFrom + perPage;
+          items.hide().slice(showFrom, showTo).show();
+      }
+  });
+}
+home__pagination();
+

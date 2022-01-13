@@ -30,7 +30,6 @@ html {
     font-family: 'Roboto', sans-serif;;
     font-size: 62.5%;
     line-height: 2rem;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -326,6 +325,7 @@ input[type="password"]{
 .form__input:focus ~ .form__icon {
     color: var(--primary);
 }
+
 /* base  */
 
 .root {
@@ -345,7 +345,9 @@ input[type="password"]{
 
 .root__sildebar {
     width: var(--slidebar);
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
     height: 100%;
     margin-top: var(--mscroll);
     background: #FBFBFB;
@@ -357,6 +359,7 @@ input[type="password"]{
     margin-top: var(--mscroll);
     width: var(--body);
     background: var(--bgr);
+    margin-left: var(--slidebar);
 }
 
 .root__content {
@@ -365,6 +368,7 @@ input[type="password"]{
     width: 100%;
     height: 100%;
     padding: 40px 40px 0px 40px;
+    scroll-behavior: smooth;
 }
 
 .root__content.nop {
@@ -1062,6 +1066,10 @@ input[type="password"]{
         width: 60px;
     }
 
+    .root__content-block {
+        margin-left: 60px;
+    }
+
     .root__sildebar-menu-link span {
         display: none;
     }
@@ -1120,8 +1128,10 @@ input[type="password"]{
 
 }
 
-@media screen and (min-width: 46.250em) and (max-width: 63.938em){
-
+@media screen and (max-width: 46.250em) {
+    .root__content-block {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 46.188em) {

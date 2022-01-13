@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/libs/pagination/simplePagination.css">
     <link rel="stylesheet" href="./assets/css/root.css">
 </head>
 <body>
@@ -293,276 +294,612 @@
                        </div>
                        <div class="home__box row">
                            <div class="home__relics-block col l-9 m-12 c-12">
-                            <div class="home__filter">
-                                <div class="home__filter-list">
-                                    <div class="home__filter-item">
-                                        <img src="./assets/libs/img/menu.png" alt="" class="home__filter-item-img">
-                                        <div class="custom-select home__filter-item-select">
-                                            <select>
-                                                <option value="0">Tất cả danh mục</option>
-                                                <option value="1">Di tích lịch sử - văn hóa</option>
-                                                <option value="2">Di tích kiến trúc nghệ thuật</option>
-                                                <option value="3">Di tích khảo cổ</option>
-                                                <option value="4">Di tích thắng cảnh</option>
-                                                <option value="5">Di tích lịch sử cách mạng</option>
-                                                <option value="6">Theo địa phương</option>
-                                            </select>
+                                <div class="home__filter">
+                                    <div class="home__filter-list">
+                                        <div class="home__filter-item">
+                                            <img src="./assets/libs/img/menu.png" alt="" class="home__filter-item-img">
+                                            <div class="custom-select home__filter-item-select">
+                                                <select>
+                                                    <option value="0">Tất cả danh mục</option>
+                                                    <option value="1">Di tích lịch sử - văn hóa</option>
+                                                    <option value="2">Di tích kiến trúc nghệ thuật</option>
+                                                    <option value="3">Di tích khảo cổ</option>
+                                                    <option value="4">Di tích thắng cảnh</option>
+                                                    <option value="5">Di tích lịch sử cách mạng</option>
+                                                    <option value="6">Theo địa phương</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="home__filter-item">
+                                            <img src="./assets/libs/img/location.png" alt="" class="home__filter-item-img">
+                                            <div class="custom-select home__filter-item-select">
+                                                <select>
+                                                    <option value="0">Tất cả</option>
+                                                    <option value="1">TP Hà Tĩnh</option>
+                                                    <option value="2">Lộc Hà</option>
+                                                    <option value="3">Cẩm Xuyên</option>
+                                                    <option value="4">Kỳ Anh</option>
+                                                    <option value="5">Nghi Xuân</option>
+                                                    <option value="6">Thịch Lộc</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="home__filter-item">
+                                            <img src="./assets/libs/img/star.png" alt="" class="home__filter-item-img">
+                                            <div class="custom-select home__filter-item-select">
+                                                <select>
+                                                    <option value="0">Xếp hạng</option>
+                                                    <option value="1">Di tích quốc gia</option>
+                                                    <option value="2">Di tích cấp tỉnh</option>
+                                                    <option value="3">Văn hóa phi vật thể</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="home__filter-item">
-                                        <img src="./assets/libs/img/location.png" alt="" class="home__filter-item-img">
-                                        <div class="custom-select home__filter-item-select">
-                                            <select>
-                                                <option value="0">Tất cả</option>
-                                                <option value="1">TP Hà Tĩnh</option>
-                                                <option value="2">Lộc Hà</option>
-                                                <option value="3">Cẩm Xuyên</option>
-                                                <option value="4">Kỳ Anh</option>
-                                                <option value="5">Nghi Xuân</option>
-                                                <option value="6">Thịch Lộc</option>
-                                            </select>
-                                        </div>
+                                    <button class="home__filter-add">
+                                        <span>Thêm mới</span>
+                                        <img src="./assets/libs/img/plus.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="home__relics">
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="home__filter-item">
-                                        <img src="./assets/libs/img/star.png" alt="" class="home__filter-item-img">
-                                        <div class="custom-select home__filter-item-select">
-                                            <select>
-                                                <option value="0">Xếp hạng</option>
-                                                <option value="1">Di tích quốc gia</option>
-                                                <option value="2">Di tích cấp tỉnh</option>
-                                                <option value="3">Văn hóa phi vật thể</option>
-                                            </select>
-                                        </div>
+                                    <div class="home__relics-item">
+                                            <a href="./assets/components/details.html" class="home__relics-link">
+                                                <div class="home__relics-item-media">
+                                                    <img src="https://vietjet.net/includes/uploads/2016/01/8-3-va-nhung-nguoi-phu-nu-noi-tieng-trong-lich-su-viet-nam-p1.jpg" alt="">
+                                                </div>
+                                                <div class="home__relics-item-content">
+                                                    <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                    <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                    <p class="home__relics-item-desc compact">
+                                                        Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                        Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                        Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                        Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    </p>
+                                                    <div class="home__relics-item-ac">
+                                                        <div class="home__relics-item-ac-list">
+                                                            <div class="home__relics-item-ac-it tooltip">
+                                                                <img src="./assets/libs/img/star.png" alt="">
+                                                                <span>Di tích quốc gia</span>
+                                                                <div class="ttip">Xếp hạng</div>
+                                                            </div>
+                                                            <div class="home__relics-item-ac-it tooltip">
+                                                                <img src="./assets/libs/img/folder.png" alt="">
+                                                                <span>32 Tập tin</span>
+                                                                <div class="ttip">Thư viện</div>
+                                                            </div>
+                                                            <div class="home__relics-item-ac-it tooltip">
+                                                                <img src="./assets/libs/img/insurance.png" alt="">
+                                                                <span>Huyện Thạch Hà</span>
+                                                                <div class="ttip">Địa điểm</div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://edu.viettel.vn/upload/64504/20190705/grabd4e49120209_hanthienhai49.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://edu.viettel.vn/upload/64504/20190705/grab64d7d120209_hanthienhai07.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://lh5.googleusercontent.com/-GoBGvW0t48w/TzKZ1Yhd15I/AAAAAAAAJKA/MIdmnDyOw4c/s390/120209_hanthienhai12.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://myphammioskin.com.vn/anh-hung-lich-su-viet-nam/imager_2_69401_700.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://edu.viettel.vn/upload/64504/20190705/grabbb43b120209_hanthienhai13.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                            <a href="./assets/components/details.html" class="home__relics-link">
+                                                <div class="home__relics-item-media">
+                                                    <img src="https://toplist.vn/images/800px/hai-ba-trung-19268.jpg" alt="">
+                                                </div>
+                                                <div class="home__relics-item-content">
+                                                    <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                    <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                    <p class="home__relics-item-desc compact">
+                                                        Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                        Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                        Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                        Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    </p>
+                                                    <div class="home__relics-item-ac">
+                                                        <div class="home__relics-item-ac-list">
+                                                            <div class="home__relics-item-ac-it tooltip">
+                                                                <img src="./assets/libs/img/star.png" alt="">
+                                                                <span>Di tích quốc gia</span>
+                                                                <div class="ttip">Xếp hạng</div>
+                                                            </div>
+                                                            <div class="home__relics-item-ac-it tooltip">
+                                                                <img src="./assets/libs/img/folder.png" alt="">
+                                                                <span>32 Tập tin</span>
+                                                                <div class="ttip">Thư viện</div>
+                                                            </div>
+                                                            <div class="home__relics-item-ac-it tooltip">
+                                                                <img src="./assets/libs/img/insurance.png" alt="">
+                                                                <span>Huyện Thạch Hà</span>
+                                                                <div class="ttip">Địa điểm</div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://toplist.vn/images/800px/ba-trieu-508427.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="http://doisongvaphattrien.vn/uploads/images/van-viet/xi1.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://vitoquocvietnam.files.wordpress.com/2016/06/tran_hung_daovuong.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://lh5.googleusercontent.com/-JrSABNZOqks/TzKaOrbYqoI/AAAAAAAAJOo/qtFHqB-U9Hg/s390/120209_hanthienhai52.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://chauphuochuy.com/files/tin/476/jpg/100-cau-tho-ve-lich-su-vn.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://edu.viettel.vn/upload/64504/20190705/grab3601b120209_hanthienhai25.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="home__relics-item">
+                                        <a href="./assets/components/details.html" class="home__relics-link">
+                                            <div class="home__relics-item-media">
+                                                <img src="https://edu.viettel.vn/upload/64504/20190705/grab91738120209_hanthienhai42.jpg" alt="">
+                                            </div>
+                                            <div class="home__relics-item-content">
+                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
+                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
+                                                <p class="home__relics-item-desc compact">
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
+                                                </p>
+                                                <div class="home__relics-item-ac">
+                                                    <div class="home__relics-item-ac-list">
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/star.png" alt="">
+                                                            <span>Di tích quốc gia</span>
+                                                            <div class="ttip">Xếp hạng</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/folder.png" alt="">
+                                                            <span>32 Tập tin</span>
+                                                            <div class="ttip">Thư viện</div>
+                                                        </div>
+                                                        <div class="home__relics-item-ac-it tooltip">
+                                                            <img src="./assets/libs/img/insurance.png" alt="">
+                                                            <span>Huyện Thạch Hà</span>
+                                                            <div class="ttip">Địa điểm</div>
+                                                        </div>
+                                                    </div>
+                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-                                <button class="home__filter-add">
-                                    <span>Thêm mới</span>
-                                    <img src="./assets/libs/img/plus.png" alt="">
-                                </button>
-                            </div>
-                               <div class="home__relics">
-                                   <div class="home__relics-item">
-                                       <a href="./assets/components/details.html" class="home__relics-link">
-                                           <div class="home__relics-item-media">
-                                               <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
-                                           </div>
-                                           <div class="home__relics-item-content">
-                                               <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                               <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                               <p class="home__relics-item-desc compact">
-                                                   Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                   Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                   Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                   Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                               </p>
-                                               <div class="home__relics-item-ac">
-                                                   <div class="home__relics-item-ac-list">
-                                                       <div class="home__relics-item-ac-it tooltip">
-                                                           <img src="./assets/libs/img/star.png" alt="">
-                                                           <span>Di tích quốc gia</span>
-                                                           <div class="ttip">Xếp hạng</div>
-                                                       </div>
-                                                       <div class="home__relics-item-ac-it tooltip">
-                                                           <img src="./assets/libs/img/folder.png" alt="">
-                                                           <span>32 Tập tin</span>
-                                                           <div class="ttip">Thư viện</div>
-                                                       </div>
-                                                       <div class="home__relics-item-ac-it tooltip">
-                                                           <img src="./assets/libs/img/insurance.png" alt="">
-                                                           <span>Huyện Thạch Hà</span>
-                                                           <div class="ttip">Địa điểm</div>
-                                                       </div>
-                                                   </div>
-                                                   <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
-                                               </div>
-                                           </div>
-                                       </a>
-                                   </div>
-                                   <div class="home__relics-item">
-                                    <a href="./assets/components/details.html" class="home__relics-link">
-                                        <div class="home__relics-item-media">
-                                            <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
-                                        </div>
-                                        <div class="home__relics-item-content">
-                                            <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                            <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                            <p class="home__relics-item-desc compact">
-                                                Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                            </p>
-                                            <div class="home__relics-item-ac">
-                                                <div class="home__relics-item-ac-list">
-                                                    <div class="home__relics-item-ac-it tooltip">
-                                                        <img src="./assets/libs/img/star.png" alt="">
-                                                        <span>Di tích quốc gia</span>
-                                                        <div class="ttip">Xếp hạng</div>
-                                                    </div>
-                                                    <div class="home__relics-item-ac-it tooltip">
-                                                        <img src="./assets/libs/img/folder.png" alt="">
-                                                        <span>32 Tập tin</span>
-                                                        <div class="ttip">Thư viện</div>
-                                                    </div>
-                                                    <div class="home__relics-item-ac-it tooltip">
-                                                        <img src="./assets/libs/img/insurance.png" alt="">
-                                                        <span>Huyện Thạch Hà</span>
-                                                        <div class="ttip">Địa điểm</div>
-                                                    </div>
-                                                </div>
-                                                <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    </div>
-                                    <div class="home__relics-item">
-                                        <a href="./assets/components/details.html" class="home__relics-link">
-                                            <div class="home__relics-item-media">
-                                                <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
-                                            </div>
-                                            <div class="home__relics-item-content">
-                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                                <p class="home__relics-item-desc compact">
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                </p>
-                                                <div class="home__relics-item-ac">
-                                                    <div class="home__relics-item-ac-list">
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/star.png" alt="">
-                                                            <span>Di tích quốc gia</span>
-                                                            <div class="ttip">Xếp hạng</div>
-                                                        </div>
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/folder.png" alt="">
-                                                            <span>32 Tập tin</span>
-                                                            <div class="ttip">Thư viện</div>
-                                                        </div>
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/insurance.png" alt="">
-                                                            <span>Huyện Thạch Hà</span>
-                                                            <div class="ttip">Địa điểm</div>
-                                                        </div>
-                                                    </div>
-                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="home__relics-item">
-                                        <a href="./assets/components/details.html" class="home__relics-link">
-                                            <div class="home__relics-item-media">
-                                                <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
-                                            </div>
-                                            <div class="home__relics-item-content">
-                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                                <p class="home__relics-item-desc compact">
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                </p>
-                                                <div class="home__relics-item-ac">
-                                                    <div class="home__relics-item-ac-list">
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/star.png" alt="">
-                                                            <span>Di tích quốc gia</span>
-                                                            <div class="ttip">Xếp hạng</div>
-                                                        </div>
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/folder.png" alt="">
-                                                            <span>32 Tập tin</span>
-                                                            <div class="ttip">Thư viện</div>
-                                                        </div>
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/insurance.png" alt="">
-                                                            <span>Huyện Thạch Hà</span>
-                                                            <div class="ttip">Địa điểm</div>
-                                                        </div>
-                                                    </div>
-                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="home__relics-item">
-                                        <a href="./assets/components/details.html" class="home__relics-link">
-                                            <div class="home__relics-item-media">
-                                                <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
-                                            </div>
-                                            <div class="home__relics-item-content">
-                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                                <p class="home__relics-item-desc compact">
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                </p>
-                                                <div class="home__relics-item-ac">
-                                                    <div class="home__relics-item-ac-list">
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/star.png" alt="">
-                                                            <span>Di tích quốc gia</span>
-                                                            <div class="ttip">Xếp hạng</div>
-                                                        </div>
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/folder.png" alt="">
-                                                            <span>32 Tập tin</span>
-                                                            <div class="ttip">Thư viện</div>
-                                                        </div>
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/insurance.png" alt="">
-                                                            <span>Huyện Thạch Hà</span>
-                                                            <div class="ttip">Địa điểm</div>
-                                                        </div>
-                                                    </div>
-                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="home__relics-item">
-                                        <a href="./assets/components/details.html" class="home__relics-link">
-                                            <div class="home__relics-item-media">
-                                                <img src="https://toplist.vn/images/800px/ngo-quyen-13581.jpg" alt="">
-                                            </div>
-                                            <div class="home__relics-item-content">
-                                                <h2 class="home__relics-item-title">Top 12 vị tướng giỏi nhất lịch sử Việt Nam</h2>
-                                                <h3 class="home__relics-item-key">Nhân vật được thờ</h3>
-                                                <p class="home__relics-item-desc compact">
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                    Trải qua hàng nghìn năm dựng nước và giữ nước, Việt Nam đã sản sinh ra nhiều vị tướng tài ba được cả thế giới ghi nhận. Mỗi triều đại lịch sử, dân tộc ta đều tự hào vì có được các danh tướng đủ tài và đức để lãnh đạo nhân dân đánh bại hầu hết các thế lực ngoại xâm, bảo vệ yên bình cho dân tộc. Bạn có biết ai là một trong số những vị tướng tài giỏi của nước ta không? Bạn biết gì về họ? Hãy cùng Toplist.vn tìm hiểu nhé!
-                                                </p>
-                                                <div class="home__relics-item-ac">
-                                                    <div class="home__relics-item-ac-list">
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/star.png" alt="">
-                                                            <span>Di tích quốc gia</span>
-                                                            <div class="ttip">Xếp hạng</div>
-                                                        </div>
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/folder.png" alt="">
-                                                            <span>32 Tập tin</span>
-                                                            <div class="ttip">Thư viện</div>
-                                                        </div>
-                                                        <div class="home__relics-item-ac-it tooltip">
-                                                            <img src="./assets/libs/img/insurance.png" alt="">
-                                                            <span>Huyện Thạch Hà</span>
-                                                            <div class="ttip">Địa điểm</div>
-                                                        </div>
-                                                    </div>
-                                                    <span class="home__relics-item-ac-btn btn">Xem chi tiết</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
+                                <div class="home__pagination">
+                                    <div id="home__pagination" class="home__pagination-ac"></div>
                                 </div>
                            </div>
                            <div class="home__other-block col l-3 m-0 c-0">
@@ -760,5 +1097,7 @@
         </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./assets/libs/pagination/jquery.simplePagination.js"></script>
 <script src="./assets/js/root.js"></script>
 </html>
