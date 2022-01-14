@@ -92,6 +92,10 @@
     display: none;
 }
 
+.details__relics-lib-view-img:hover {
+    cursor: url(http://3.bp.blogspot.com/-NlJtCzyqKHA/VdXXCT0wPYI/AAAAAAAACso/WKBanqxqu4U/s1600/zoom_in.png), progress;opacity:0.9
+}
+
 .details__relics-lib-control {
     position: absolute;
     left: 0;
@@ -409,6 +413,10 @@
 .details__relics-box-item {
     border-bottom: 1px solid var(--bgr);
     border-radius: 6px;
+}
+
+.details__relics-box-item:last-child {
+    border-bottom: none;
 }
 
 .details__relics-box-item:hover {

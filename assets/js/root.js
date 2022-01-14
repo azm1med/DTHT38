@@ -1,3 +1,26 @@
+// scroll 
+var win = document.getElementById('root__content');
+win.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var id = document.getElementById('root__header');
+    var block = document.getElementById('root__content-block');
+    var x = window.matchMedia("(max-width: 46.188em)")
+    if (win.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      id.style.height = '50px';
+      block.style.marginTop = '80px';
+      if(x.matches) {
+        block.style.marginTop = '50px';
+      }
+    } else {
+      id.style.height = '80px';
+      block.style.marginTop = '110px';
+      if(x.matches) {
+        block.style.marginTop = '80px';
+      }
+    }
+}
+// scroll 
 
 // select 
 var x, i, j, l, ll, selElmnt, a, b, c;
