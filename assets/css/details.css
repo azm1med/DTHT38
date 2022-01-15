@@ -303,6 +303,13 @@
     align-items: center;
     margin-bottom: 15px;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.details__relics-hot-item:hover ,
+.details__relics-hot-item.active {
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.03);
 }
 
 .details__relics-hot-item-number {
@@ -315,7 +322,7 @@
     background: var(--bgr);
 }
 
-.details__relics-hot-item:hover .details__relics-hot-item-number {
+.details__relics-hot-item.active .details__relics-hot-item-number {
     background: var(--gradient__red);
 }
 
@@ -327,7 +334,7 @@
     font-size: 6rem;
 }
 
-.details__relics-hot-item:hover .details__relics-hot-item-number span {
+.details__relics-hot-item.active .details__relics-hot-item-number span {
     background-image: var(--gradient__yel);
 }
 
@@ -342,6 +349,10 @@
 }
  
 .details__relics-hot-item:hover .details__relics-hot-item-title {
+    text-decoration: underline;
+}
+ 
+.details__relics-hot-item.active .details__relics-hot-item-title {
     text-decoration: underline;
 }
 
