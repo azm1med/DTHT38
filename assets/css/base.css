@@ -85,6 +85,9 @@ input[type="password"]{
     padding: 5px 10px;
     color: #fff;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .btn.btn--primary {

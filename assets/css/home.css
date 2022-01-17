@@ -188,13 +188,11 @@
 }
 
 .home__relics-item-ac-btn {
-    display: block;
     background: var(--bgr__sub);
     color: var(--text);
     border-radius: 6px;
     padding: 0px 20px;
-    height: 40px !important;
-    line-height: 40px;
+    height: 40px;
 }
 
 .home__relics-link:hover .home__relics-item-ac-btn {
