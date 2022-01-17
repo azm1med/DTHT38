@@ -5,17 +5,27 @@ win.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     var id = document.getElementById('root__header');
     var block = document.getElementById('root__content-block');
-    var x = window.matchMedia("(max-width: 46.188em)")
+    var nav = document.getElementById('root__nav');
+    var t = window.matchMedia("(max-width: 63.938em)");
+    var m = window.matchMedia("max-width: 46.188em)");
+    var bar = document.getElementById('root__sildebar');
+
     if (win.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       id.style.height = '50px';
-      block.style.marginTop = '80px';
-      if(x.matches) {
-        block.style.marginTop = '50px';
-      }
+      nav.style.display = 'none';
+      block.style.marginTop = '50px';
+      bar.style.marginTop = '50px';
+
     } else {
       id.style.height = '80px';
+      nav.style.display = 'flex';
       block.style.marginTop = '110px';
-      if(x.matches) {
+      bar.style.marginTop = '110px';
+      if(t.matches) {
+        bar.style.marginTop = '80px';
+        block.style.marginTop = '80px';
+      }
+      if(m.matches) {
         block.style.marginTop = '80px';
       }
     }

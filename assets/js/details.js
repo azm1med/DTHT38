@@ -148,3 +148,27 @@ function holiday(e) {
     } 
 }
 // count time 
+
+//scroll
+function hoverScroll() {
+    function scroll(){
+        $('.details__fast-item-link').each(function (){
+            var scrollPos = $('#root__content').scrollTop();
+            var ref = $($(this).attr("href"));
+            var refPos = ref.position().top;
+            var refHeight = ref.height();
+            if(refPos <= scrollPos && refPos + refHeight > scrollPos){
+                $('.details__fast-item-link').removeClass("active");
+                $(this).addClass("active");
+            };
+        });
+    };
+
+    $(document).ready(function(){
+        scroll();
+        $('#root__content').on('scroll resize', scroll);
+    });
+}
+hoverScroll();
+//scroll
+

@@ -93,7 +93,8 @@
 }
 
 .details__relics-lib-view-img:hover {
-    cursor: url(http://3.bp.blogspot.com/-NlJtCzyqKHA/VdXXCT0wPYI/AAAAAAAACso/WKBanqxqu4U/s1600/zoom_in.png), progress;opacity:0.9
+    cursor: url(../libs/img/zoom_in.png), progress;
+    opacity: 0.9;
 }
 
 .details__relics-lib-control {
@@ -113,6 +114,7 @@
     border-radius: 6px;
     display: flex;
     color: #fff;
+    cursor: pointer;
 }
 
 .details__relics-lib-control-btn:hover {
@@ -172,6 +174,7 @@
     margin-right: 10px;
     border-radius: 6px;
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .details__relics-lib-item.active {
@@ -415,6 +418,7 @@
     height: 100%;
     margin: 0;
     padding: 10px 0;
+    min-height: 150px;
 }
 
 .details__relics-box.empty .details__relics-box-list {
@@ -422,33 +426,51 @@
 }
 
 .details__relics-box-item {
-    border-bottom: 1px solid var(--bgr);
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 
-.details__relics-box-item:last-child {
-    border-bottom: none;
-}
-
-.details__relics-box-item:hover {
-    background: var(--bgr__sub);
+.details__relics-box-item.empty__appear {
+    display: none;
 }
 
 .details__relics-box.empty .details__relics-box-item {
+    display: none;
+}
+
+.details__relics-box.empty .details__relics-box-item.empty__appear {
+    display: block;
+}
+
+.details__relics-box-item:hover {
+    
+}
+
+.details__relics-box.empty .details__relics-box-item.empty__appear .details__relics-box-item-link {
     border-bottom: none;
+    display: flex;
+}
+
+.details__relics-box.empty .details__relics-box-item.empty__appear .details__relics-box-item-link>span {
     margin: auto;
 }
 
-.details__relics-box.empty .details__relics-box-item:hover {
+.details__relics-box.empty .details__relics-box-item.empty__appear:hover .details__relics-box-item-link {
     background: transparent;
 }
 
 .details__relics-box-item-link {
     display: block;
     padding: 10px;
+    border-bottom: 1px solid var(--bgr);
+    height: 100%;
+    border-radius: 6px;
 }
 
-.details__relics-box-list.empty .details__relics-box-item-link {
+.details__relics-box-item-link:hover {
+    background: var(--bgr__sub);
+}
+
+.details__relics-box-item.empty__appear .details__relics-box-item-link {
     text-align: center;
 }
 
@@ -472,8 +494,8 @@
     width: 100%;
     object-fit: cover;
     border-radius: 6px;
+    cursor: url(../libs/img/zoom_in.png), progress;
 }
-
 
 .details__fast-block {
     position: relative;
@@ -637,23 +659,94 @@
 }
 /* relics media page  */
 
-.details__relics-document {
+.details__relics-box-left {
 
+}
+
+.details__relics-document {
+    height: 100%;
+    border: 1px solid var(--bgr);
+    border-radius: 6px;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.03);
+    padding: 20px;
+}
+
+.details__relics-document-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.details__relics-document-header-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.details__relics-document-header-title {
+    font-size: 2.2rem;
+    font-weight: 700;
 }
 
 .details__relics-document-item {
-
-}
-
-.details__relics-document-link {
     display: block;
-    padding: 10px 20px;
+    border-bottom: 1px dashed #E7E7E7;
+    padding: 10px;
     border-radius: 6px;
 }
 
-.details__relics-document-link:hover {
+.details__relics-document-item:last-child {
+    border-bottom: none;
+}
+
+.details__relics-document-item:hover {
     background: var(--bgr__sub);
 }
+
+.details__relics-document-item-title {
+    font-size: 1.5rem;
+    display: block;
+}
+
+.details__relics-document-item-desc {
+    display: block;
+    color: var(--sub__text);
+    font-size: 1.2rem;
+}
+
+.details__relics-box-right {
+
+}
+
+.details__relics-news {
+    height: 100%;
+    border: 1px solid var(--bgr);
+    border-radius: 6px;
+    box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.03);
+    padding: 20px;
+}
+
+.details__relics-news-item {
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.details__relics-news-item:hover {
+    background: var(--bgr__sub);
+}
+
+.details__relics-news-title {
+    font-weight: 600;
+    -webkit-line-clamp: 1;
+}
+
+.details__relics-news-desc {
+    color: var(--sub__text);
+    font-size: 1.2rem;
+    -webkit-line-clamp: 2;
+}
+
 
 /* reponsive  */
 
@@ -687,8 +780,10 @@
 
 }
 
-@media screen and (min-width: 46.250em) and (max-width: 63.938em){
-
+@media screen and (max-width: 46.250em) {
+    .details__relics-box-left {
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 46.188em) {

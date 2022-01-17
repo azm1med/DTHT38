@@ -413,6 +413,7 @@ input[type="password"]{
 .root__nav-list {
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 .root__nav-link {
@@ -1116,6 +1117,10 @@ input[type="password"]{
 }
 
 @media screen and (max-width: 63.938em) {
+    .root__header-block {
+        height: var(--header);
+    }
+
     .root__header {
         padding: 0 10px;
     }
@@ -1127,7 +1132,15 @@ input[type="password"]{
     .root__header-search {
         display: none;
     }
+        
+    .root__nav {
+        display: none !important;
+    }
 
+    .root__content-block,
+    .root__sildebar {
+        margin-top: var(--header);
+    }
 }
 
 @media screen and (max-width: 46.250em) {
@@ -1139,10 +1152,6 @@ input[type="password"]{
 @media screen and (max-width: 46.188em) {
     .custom-select {
         width: 100%;
-    }
-    
-    .root__nav {
-        display: none;
     }
 
     .root__content-block {

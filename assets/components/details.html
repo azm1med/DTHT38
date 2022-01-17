@@ -16,7 +16,7 @@
 <body>
     <div class="root grid">
         <div id="root__header-block" class="root__header-block">
-            <div class="root__nav">
+            <div id="root__nav" class="root__nav">
                 <ul class="root__nav-list">
                     <li class="root__nav-item">
                         <a href="#" class="root__nav-link"><span>Cổng thông tin</span></a>
@@ -195,7 +195,7 @@
             </div>
         </div>
         <div class="root__body">
-            <div class="root__sildebar">
+            <div id="root__sildebar" class="root__sildebar">
                 <ul class="root__sildebar-menu">
                     <li class="root__sildebar-menu-list">
                         <a href="../../index.html" class="root__sildebar-menu-link active">
@@ -407,44 +407,69 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="relics__other" class="details__relics-box-block row">
-                                            <div class="details__relics-box col l-6 m-12 c-12">
-                                                <div class="details__relics-box-border">
-                                                    <div class="details__relics-box-header">
-                                                        <img src="../libs/img/cpu-tower.png" alt="" class="details__relics-box-img">
-                                                        <h2 class="details__relics-box-title">Thờ nhân vật</h2>
-                                                    </div>
-                                                    <div class="details__relics-box-body nop">
-                                                        <ul class="details__relics-box-list">
-                                                            <li class="details__relics-box-item">
-                                                                <a href="#" class="details__relics-box-item-link">Đức Quan Hoàng Mười</a>
-                                                            </li>
-                                                            <li class="details__relics-box-item">
-                                                                <a href="#" class="details__relics-box-item-link">Thánh mẫu Liễu Hạnh</a>
-                                                            </li>
-                                                            <li class="details__relics-box-item">
-                                                                <a href="#" class="details__relics-box-item-link">Đức Thánh Trần</a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                        <!-- <div id="relics__other" class="details__relics-box-block row"> -->
+                                        <div id="relics__people" class="details__relics-box">
+                                            <div class="details__relics-box-border">
+                                                <div class="details__relics-box-header">
+                                                    <img src="../libs/img/cpu-tower.png" alt="" class="details__relics-box-img">
+                                                    <h2 class="details__relics-box-title">Thờ nhân vật</h2>
                                                 </div>
-                                            </div>
-                                            <div class="details__relics-box empty col l-6 m-12 c-12">
-                                                <div class="details__relics-box-border">
-                                                    <div class="details__relics-box-header">
-                                                        <img src="../libs/img/vase.png" alt="" class="details__relics-box-img">
-                                                        <h2 class="details__relics-box-title">Hiện vật</h2>
-                                                    </div>
-                                                    <div class="details__relics-box-body nop">
-                                                        <ul class="details__relics-box-list">
-                                                            <li class="details__relics-box-item ">
-                                                                <p href="#" class="details__relics-box-item-link">Chưa có <strong>hiện vật</strong> được liệt kê</p>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="details__relics-box-body nop">
+                                                    <ul class="details__relics-box-list row">
+                                                        <li class="details__relics-box-item empty__appear col l-12 m-12 c-12">
+                                                            <p class="details__relics-box-item-link">
+                                                                <span>Chưa có <strong>nhân vật</strong> được liệt kê</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="details__relics-box-item col l-6 m-12 c-12">
+                                                            <a href="#" class="details__relics-box-item-link">Đức Quan Hoàng Mười</a>
+                                                        </li>
+                                                        <li class="details__relics-box-item col l-6 m-12 c-12">
+                                                            <a href="#" class="details__relics-box-item-link">Thánh mẫu Liễu Hạnh</a>
+                                                        </li>
+                                                        <li class="details__relics-box-item col l-6 m-12 c-12">
+                                                            <a href="#" class="details__relics-box-item-link">Đức Thánh Trần</a>
+                                                        </li>
+                                                        <li class="details__relics-box-item col l-6 m-12 c-12">
+                                                            <a href="#" class="details__relics-box-item-link">Đức Quan Hoàng Mười</a>
+                                                        </li>
+                                                        <li class="details__relics-box-item col l-6 m-12 c-12">
+                                                            <a href="#" class="details__relics-box-item-link">Thánh mẫu Liễu Hạnh</a>
+                                                        </li>
+                                                        <li class="details__relics-box-item col l-6 m-12 c-12">
+                                                            <a href="#" class="details__relics-box-item-link">Đức Thánh Trần</a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div id="relics__arti" class="details__relics-box empty">
+                                            <div class="details__relics-box-border">
+                                                <div class="details__relics-box-header">
+                                                    <img src="../libs/img/vase.png" alt="" class="details__relics-box-img">
+                                                    <h2 class="details__relics-box-title">Hiện vật</h2>
+                                                </div>
+                                                <div class="details__relics-box-body nop">
+                                                    <ul class="details__relics-box-list row">
+                                                        <li class="details__relics-box-item empty__appear col l-12 m-12 c-12">
+                                                            <p class="details__relics-box-item-link">
+                                                                <span>Chưa có <strong>hiện vật</strong> được liệt kê</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="details__relics-box-item col col l-6 m-12 c-12">
+                                                            <a href="#" class="details__relics-box-item-link">Trống đồng</a>
+                                                        </li>
+                                                        <li class="details__relics-box-item col col l-6 m-12 c-12">
+                                                            <a href="#" class="details__relics-box-item-link">Trống đồng</a>
+                                                        </li>
+                                                        <li class="details__relics-box-item col col l-6 m-12 c-12">
+                                                            <a href="#" class="details__relics-box-item-link">Trống đồng</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- </div> -->
                                         <div id="relics__media" class="details__relics-box">
                                             <div class="details__relics-box-border">
                                                 <div class="details__relics-box-header">
@@ -496,28 +521,43 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="relics__document" class="details__relics-box">
-                                            <div class="details__relics-box-border">
-                                                <div class="details__relics-box-header">
-                                                    <img src="../libs/img/download.png" alt="" class="details__relics-box-img">
-                                                    <h2 class="details__relics-box-title">Tài liệu di tích</h2>
+                                        <div id="relics__document" class="details__relics-box row">
+                                            <div class="details__relics-box-left col l-8 m-7 c-12">
+                                                <div class="details__relics-document">
+                                                    <div class="details__relics-document-header">
+                                                        <img src="../libs/img/down.png" alt="" class="details__relics-document-header-img">
+                                                        <h2 class="details__relics-document-header-title">Tài liệu di tích</h2>
+                                                    </div>
+                                                    <div class="details__relics-document-list">
+                                                        <a href="#" class="details__relics-document-item" download>
+                                                            <span class="details__relics-document-item-title">Tài kiệu về sắc phong đền Củi thờ ong Hoàng Mười</span>
+                                                            <span class="details__relics-document-item-desc">Cập nhật: 24/09/2021 File.docx</span>
+                                                        </a>
+                                                        <a href="#" class="details__relics-document-item" download>
+                                                            <span class="details__relics-document-item-title">Tài kiệu về sắc phong đền Củi thờ ong Hoàng Mười</span>
+                                                            <span class="details__relics-document-item-desc">Cập nhật: 24/09/2021 File.docx</span>
+                                                        </a>
+                                                        <a href="#" class="details__relics-document-item" download>
+                                                            <span class="details__relics-document-item-title">Tài kiệu về sắc phong đền Củi thờ ong Hoàng Mười</span>
+                                                            <span class="details__relics-document-item-desc">Cập nhật: 24/09/2021 File.docx</span>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <div class="details__relics-box-body">
-                                                    <ul class="details__relics-document">
-                                                        <li class="details__relics-document-item">
-                                                            <a href="#" class="details__relics-document-link">Tài liệu về sắc phong đền củi thờ ông Hoàng Mười</a>
-                                                        </li>
-                                                        <li class="details__relics-document-item">
-                                                            <a href="#" class="details__relics-document-link">Tài liệu về sắc phong đền củi thờ ông Hoàng Mười</a>
-                                                        </li>
-                                                        <li class="details__relics-document-item">
-                                                            <a href="#" class="details__relics-document-link">Tài liệu về sắc phong đền củi thờ ông Hoàng Mười</a>
-                                                        </li>
-                                                        <li class="details__relics-document-item">
-                                                            <a href="#" class="details__relics-document-link">Tài liệu về sắc phong đền củi thờ ông Hoàng Mười</a>
-                                                        </li>
-                                                    </ul>
-                                                    
+                                            </div>
+                                            <div class="details__relics-box-right col l-4 m-5 c-12">
+                                                <div class="details__relics-news">
+                                                    <a href="#" class="details__relics-news-item">
+                                                        <span class="details__relics-news-title compact">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, nulla eveniet! Accusamus consectetur reprehenderit voluptate, consequatur illum, quidem laborum laudantium minus eos ea possimus nulla nisi. Optio ipsam eveniet libero.</span>
+                                                        <span class="details__relics-news-desc compact">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe commodi eos, vel dolorum molestias voluptatem labore praesentium dolorem odio, voluptas eum veniam, iure ad adipisci veritatis delectus reiciendis ducimus soluta!</span>
+                                                    </a>
+                                                    <a href="#" class="details__relics-news-item">
+                                                        <span class="details__relics-news-title compact">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, nulla eveniet! Accusamus consectetur reprehenderit voluptate, consequatur illum, quidem laborum laudantium minus eos ea possimus nulla nisi. Optio ipsam eveniet libero.</span>
+                                                        <span class="details__relics-news-desc compact">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe commodi eos, vel dolorum molestias voluptatem labore praesentium dolorem odio, voluptas eum veniam, iure ad adipisci veritatis delectus reiciendis ducimus soluta!</span>
+                                                    </a>
+                                                    <a href="#" class="details__relics-news-item">
+                                                        <span class="details__relics-news-title compact">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, nulla eveniet! Accusamus consectetur reprehenderit voluptate, consequatur illum, quidem laborum laudantium minus eos ea possimus nulla nisi. Optio ipsam eveniet libero.</span>
+                                                        <span class="details__relics-news-desc compact">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe commodi eos, vel dolorum molestias voluptatem labore praesentium dolorem odio, voluptas eum veniam, iure ad adipisci veritatis delectus reiciendis ducimus soluta!</span>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -547,14 +587,14 @@
                                                 </li>
                                                 <hr>
                                                 <li class="details__fast-item">
-                                                    <a onclick="return fast(this)" id="fast1__relics__other" href="#relics__other" class="details__fast-item-link">
+                                                    <a onclick="return fast(this)" id="fast__relics__other" href="#relics__people" class="details__fast-item-link">
                                                         <img src="../libs/img/cpu-tower.png" alt="" class="details__fast-item-img">
                                                         <span>Nhân vật</span>
                                                     </a>
                                                 </li>
                                                 <hr>
                                                 <li class="details__fast-item">
-                                                    <a onclick="return fast(this)" id="fast2__relics__other" href="#relics__other" class="details__fast-item-link">
+                                                    <a onclick="return fast(this)" id="fast2__relics__other" href="#relics__arti" class="details__fast-item-link">
                                                         <img src="../libs/img/vase.png" alt="" class="details__fast-item-img">
                                                         <span>Hiện vật</span>
                                                     </a>
