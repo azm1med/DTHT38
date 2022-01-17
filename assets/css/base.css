@@ -83,7 +83,6 @@ input[type="password"]{
 .btn {
     border-radius: 6px;
     padding: 5px 10px;
-    background-size: 200%;
     color: #fff;
     cursor: pointer;
 }
