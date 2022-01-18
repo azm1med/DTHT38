@@ -9,12 +9,14 @@ function scrollFunction() {
     var t = window.matchMedia("(max-width: 63.938em)");
     var m = window.matchMedia("max-width: 46.188em)");
     var bar = document.getElementById('root__sildebar');
+    var navmb = document.getElementById('root__navmobi');
 
     if (win.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       id.style.height = '50px';
       nav.style.display = 'none';
       block.style.marginTop = '50px';
       bar.style.marginTop = '50px';
+      navmb.style.top = '50px';
 
     } else {
       id.style.height = '80px';
@@ -28,6 +30,7 @@ function scrollFunction() {
       if(m.matches) {
         block.style.marginTop = '80px';
       }
+      navmb.style.top = '80px';
     }
 }
 // scroll 

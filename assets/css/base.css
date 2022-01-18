@@ -88,6 +88,7 @@ input[type="password"]{
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 .btn.btn--primary {
@@ -804,11 +805,11 @@ input[type="password"]{
     width: 100%;
 }
 
-#root__navmobi:checked~.modal__overlay {
+#root__navmobi__control:checked~.modal__overlay {
     display: flex;
 }
 
-#root__navmobi:checked~.root__navmobi-list-block {
+#root__navmobi__control:checked~.root__navmobi-list-block {
     display: block;
 }
 
@@ -1206,7 +1207,7 @@ input[type="password"]{
     }
     
     .root__navmobi-link span{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
 /* responsive  */
