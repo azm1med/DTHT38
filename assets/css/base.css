@@ -109,6 +109,27 @@ input[type="password"]{
     font-size: 3rem;
 }
 
+.text__key {
+    color: #5A5A5A;
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+
+.text__desc {
+    color: var(--sub__text);
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width: 63.938em) {
+    .text__key {
+        font-size: 2rem;
+        line-height: 3rem;
+    } 
+    .text__desc {
+        font-size: 1.6rem;
+    }
+}
+
 .tooltip {
     position: relative;
 }
