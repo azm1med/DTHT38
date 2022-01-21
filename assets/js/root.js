@@ -154,3 +154,33 @@ function details__pagination() {
 }
 details__pagination();
 // pagination artifacts 
+
+
+// media artifacts details 
+var slideIndex = 1;
+    artifacts__show(slideIndex);
+
+function artifacts__plus(n) {
+    artifacts__show(slideIndex += n);
+}
+
+function artifacts__current(n) {
+    artifacts__show(slideIndex = n); 
+}
+
+function artifacts__show(n) {
+    var i;
+    var slides = document.getElementsByClassName("artDetails__media-show-img");
+    var dots = document.getElementsByClassName("artDetails__media-nav-item");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+// media artifacts details 

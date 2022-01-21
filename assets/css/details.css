@@ -90,21 +90,12 @@
     object-fit: cover;
     border-radius: 6px 6px 0 0;
     display: none;
+    cursor: url(../libs/img/zoom_in.png), progress;
+    position: relative;
 }
 
 .details__relics-lib-view-img:hover {
-    cursor: url(../libs/img/zoom_in.png), progress;
     opacity: 0.9;
-}
-
-.details__relics-lib-control {
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
 }
 
 .details__relics-lib-control-btn {
@@ -115,6 +106,18 @@
     display: flex;
     color: #fff;
     cursor: pointer;
+}
+
+.details__relics-lib-control-btn.left {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.details__relics-lib-control-btn.right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
 .details__relics-lib-control-btn:hover {
