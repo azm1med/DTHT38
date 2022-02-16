@@ -151,7 +151,10 @@
 }
 
 @media screen and (max-width: 63.938em) {
-
+    .artifacts__header-img {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 @media screen and (min-width: 46.250em) and (max-width: 63.938em){

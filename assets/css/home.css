@@ -1,5 +1,5 @@
 .home {
-
+    
 }
 
 .home__header-block {
@@ -213,6 +213,10 @@
     margin-bottom: 30px;
 }
 
+.home__other:last-child {
+    margin-bottom: 0px;
+}
+
 .home__other-header {
     padding-left: 10px;
     display: flex;
@@ -321,7 +325,6 @@
 .home__pagination-ac {
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
 }
 
 /* responsive */
@@ -377,6 +380,7 @@
 
     .home__relics-item {
         height: auto;
+        margin-bottom: 20px;
     }
 
     .home__relics-link {

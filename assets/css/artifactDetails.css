@@ -246,3 +246,21 @@
 .artDetails__involve-item-time {
 
 }
+
+@media screen and (max-width: 64em){
+    
+}
+
+@media screen and (max-width: 63.938em) {
+
+}
+
+@media screen and (min-width: 46.250em) and (max-width: 63.938em){
+
+}
+
+@media screen and (max-width: 46.188em) {
+    .artDetails__media-show {
+        height: 300px;
+    }
+}
