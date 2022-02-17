@@ -980,6 +980,59 @@ input[type="password"]{
 }
 /* footer  */
 
+/* relate  */
+.root__related {
+    margin-top: 30px;
+}
+
+.root__related-title {
+    margin-bottom: 20px;
+}
+
+.root__related-list {
+
+}
+
+.root__related-item {
+    border-radius: 6px;
+    background: #fff;
+    display: block;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.root__related-item:hover {
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 10%);
+}
+
+.root__related-item-media {
+    height: 200px;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.root__related-item-media-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.root__related-content {
+    padding: 10px;
+}
+
+.root__related-content-title {
+    font-size: 1.6rem;
+    -webkit-line-clamp: 2;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.root__related-content-desc {
+    -webkit-line-clamp: 4;
+}
+
+/* relate  */
 
 /* responsive  */
 
@@ -1062,6 +1115,22 @@ input[type="password"]{
     .root__sildebar {
         margin-top: var(--header);
     }
+    
+    .root__related-item {
+        height: unset;
+    }
+}
+
+@media screen and (min-width: 46.250em) and (max-width: 63.938em){
+    .root__related-content-title {
+        line-height: 1.8rem;
+        min-height: 3.6rem;
+    }
+    
+    .root__related-content-desc {
+        line-height: 2rem;
+        min-height: 8rem;
+    }
 }
 
 @media screen and (max-width: 46.250em) {
@@ -1071,6 +1140,10 @@ input[type="password"]{
 }
 
 @media screen and (max-width: 46.188em) {
+    .root__related-item-media {
+        height: 180px;
+    }
+
     .custom-select {
         width: 100%;
     }

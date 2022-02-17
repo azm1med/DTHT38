@@ -97,7 +97,8 @@
 .artifacts__item-title {
     font-size: 1.6rem;
     font-weight: 600;
-    display: block;
+    min-height: 4rem;
+    -webkit-line-clamp: 2;
 }
 
 .artifacts__item:hover .artifacts__item-title {
@@ -106,10 +107,11 @@
 
 .artifacts__item-desc {
     -webkit-line-clamp: 3;
+    min-height: 6rem;
 }
 
 .artifacts__item-show {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
