@@ -133,14 +133,14 @@ home__pagination();
 
 
 // pagination artifacts 
-function details__pagination() {
-  var items = $(".artifacts__list .artifacts__item-block");
+function pagination__art() {
+  var items = $(".pagelist__list .pagelist__item-block");
   var numItems = items.length;
-  var perPage = 8;
+  var perPage = 12;
   
   items.slice(perPage).hide();
   
-  $('#artifacts__pagination').pagination({
+  $('#pagelist__pagination_1').pagination({
       items: numItems,
       itemsOnPage: perPage,
       prevText: "<i class='fal fa-chevron-left'></i>",
@@ -152,11 +152,53 @@ function details__pagination() {
       }
   });
 }
-details__pagination();
+pagination__art();
+
+function pagination__ftv() {
+  var items = $(".pagelist__list .pagelist__item-block");
+  var numItems = items.length;
+  var perPage = 12;
+  
+  items.slice(perPage).hide();
+  
+  $('#pagelist__pagination_2').pagination({
+      items: numItems,
+      itemsOnPage: perPage,
+      prevText: "<i class='fal fa-chevron-left'></i>",
+      nextText: "<i class='fal fa-chevron-right'></i>",
+      onPageClick: function (pageNumber) {
+          var showFrom = perPage * (pageNumber - 1);
+          var showTo = showFrom + perPage;
+          items.hide().slice(showFrom, showTo).show();
+      }
+  });
+}
+pagination__ftv();
+
+function pagination__crt() {
+  var items = $(".pagelist__list .pagelist__item-block");
+  var numItems = items.length;
+  var perPage = 12;
+  
+  items.slice(perPage).hide();
+  
+  $('#pagelist__pagination_3').pagination({
+      items: numItems,
+      itemsOnPage: perPage,
+      prevText: "<i class='fal fa-chevron-left'></i>",
+      nextText: "<i class='fal fa-chevron-right'></i>",
+      onPageClick: function (pageNumber) {
+          var showFrom = perPage * (pageNumber - 1);
+          var showTo = showFrom + perPage;
+          items.hide().slice(showFrom, showTo).show();
+      }
+  });
+}
+pagination__crt();
 // pagination artifacts 
 
 
-// media artifacts details 
+// media artifacts pagelist 
 var slideIndex = 1;
     artifacts__show(slideIndex);
 
@@ -170,8 +212,8 @@ function artifacts__current(n) {
 
 function artifacts__show(n) {
     var i;
-    var slides = document.getElementsByClassName("artDetails__media-show-img");
-    var dots = document.getElementsByClassName("artDetails__media-nav-item");
+    var slides = document.getElementsByClassName("artpagelist__media-show-img");
+    var dots = document.getElementsByClassName("artpagelist__media-nav-item");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -183,4 +225,4 @@ function artifacts__show(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
-// media artifacts details 
+// media artifacts pagelist 
