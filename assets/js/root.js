@@ -5,7 +5,6 @@ win.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   var id = document.getElementById('root__header');
   var box = document.getElementById('root__header-block');
-  console.log(box)
   var block = document.getElementById('root__content-block');
   var nav = document.getElementById('root__nav');
   var t = window.matchMedia("(max-width: 63.938em)");
@@ -226,3 +225,4 @@ function artifacts__show(n) {
     dots[slideIndex-1].className += " active";
 }
 // media artifacts pagelist 
+
