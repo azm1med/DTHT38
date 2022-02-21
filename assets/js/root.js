@@ -194,6 +194,28 @@ function pagination__crt() {
   });
 }
 pagination__crt();
+
+
+function pagination__place() {
+  var items = $(".pagelist__list .pagelist__item-block");
+  var numItems = items.length;
+  var perPage = 12;
+  
+  items.slice(perPage).hide();
+  
+  $('#place__pagination').pagination({
+      items: numItems,
+      itemsOnPage: perPage,
+      prevText: "<i class='fal fa-chevron-left'></i>",
+      nextText: "<i class='fal fa-chevron-right'></i>",
+      onPageClick: function (pageNumber) {
+          var showFrom = perPage * (pageNumber - 1);
+          var showTo = showFrom + perPage;
+          items.hide().slice(showFrom, showTo).show();
+      }
+  });
+}
+pagination__place();
 // pagination artifacts 
 
 

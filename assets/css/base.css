@@ -178,6 +178,13 @@ input[type="password"]{
     color: #FFEDBB8A;
 }
 
+/* flex  */
+.flex {
+    display: flex;
+    align-items: center;
+}
+/* flex  */
+
 /* select  */
 .custom-select {
     width: 150px;
