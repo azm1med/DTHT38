@@ -216,6 +216,28 @@ function pagination__place() {
   });
 }
 pagination__place();
+
+
+function pagination__library() {
+  var items = $(".library__list .library__item-block");
+  var numItems = items.length;
+  var perPage = 12;
+  
+  items.slice(perPage).hide();
+  
+  $('#library__pagination').pagination({
+      items: numItems,
+      itemsOnPage: perPage,
+      prevText: "<i class='fal fa-chevron-left'></i>",
+      nextText: "<i class='fal fa-chevron-right'></i>",
+      onPageClick: function (pageNumber) {
+          var showFrom = perPage * (pageNumber - 1);
+          var showTo = showFrom + perPage;
+          items.hide().slice(showFrom, showTo).show();
+      }
+  });
+}
+pagination__library();
 // pagination artifacts 
 
 
