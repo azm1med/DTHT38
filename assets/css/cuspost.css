@@ -1,0 +1,128 @@
+.cuspost {
+
+}
+
+.cuspost__header {
+
+}
+
+.cuspost__header-title {
+
+}
+
+.cuspost__header-desc {
+
+}
+
+.cuspost__body {
+    padding: 30px 0;
+}
+
+.cuspost__box.mb {
+    margin-bottom: 30px;
+}
+
+.cuspost__box-title {
+    margin-bottom: 20px;
+}
+
+.cuspost__box-contact {
+
+}
+
+.cuspost__box-contact-title {
+    font-size: 1.6rem;
+}
+
+.cuspost__box-contact-list {
+
+}
+
+.cuspost__box-contact-item {
+    margin-bottom: 10px;
+}
+
+.cuspost__box-contact-desc {
+
+}
+
+.cuspost__box-contact-text {
+    padding-bottom: 20px;
+}
+
+.cuspost__box-contact-text.bold {
+    font-weight: 700;
+}
+
+.cuspost__contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.cuspost__contact-form-title {
+    margin-bottom: 20px;
+}
+
+.cuspost__contact-form {
+
+}
+
+.cuspost__contact-form-group.form__group:last-child {
+    margin-bottom: 0;
+}
+
+.cuspost__contact-form-ac {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cuspost__contact-form-ac button {
+    height: 40px;
+    background: var(--gradient__blu);
+}
+
+.cuspost__contact-form-ac button:hover {
+    opacity: 0.8;
+}
+
+.cuspost__contact-content {
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    height: 100%;
+}
+
+.cuspost__contact-content-title {
+    margin-bottom: 20px;
+}
+
+.cuspost__contact-content-table tr {
+    height: 50px;
+    text-align: left;
+}
+
+.cuspost__contact-content-table tr {
+    height: 50px;
+}
+
+@media screen and (max-width: 63.938em) {
+    .cuspost__contact-form-block {
+        margin-bottom: 30px;
+    }
+
+    .cuspost__contact-form-title,
+    .cuspost__contact-content-title {
+        font-size: 1.8rem;
+    }
+
+    .cuspost__box-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 46.188em) {
+    .cuspost__body {
+        padding-bottom: 0;
+    }
+}

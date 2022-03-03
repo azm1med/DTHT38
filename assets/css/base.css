@@ -27,7 +27,7 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     font-size: 62.5%;
     line-height: 2rem;
 }
@@ -48,6 +48,10 @@ ul {
 
 li {
     list-style: none;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
 }
 
 input,
@@ -1125,6 +1129,10 @@ input[type="password"]{
     
     .root__related-item {
         height: unset;
+    }
+
+    .root__related-title {
+        font-size: 1.8rem;
     }
 }
 
